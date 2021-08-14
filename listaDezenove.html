@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script>
+  function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
+  }
+
+  function mostra(frase) {
+
+      document.write(frase);
+      pulaLinha();
+  }
+  var valorUm = parseInt(prompt("Digite o primeiro valor"));
+  var valorDois = parseInt(prompt("Digite o segundo valor"));
+  var valorTres = parseInt(prompt("Digite o terceiro valor"));
+  var lista = [valorUm,valorDois,valorTres];
+  lista.sort((a, b) => a - b);
+
+  document.write(lista);
+
+
+
+
+</script>

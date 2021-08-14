@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+  function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
+  }
+
+  function mostra(frase) {
+
+      document.write(frase);
+      pulaLinha();
+  }
+
+  var fatorial = parseInt(prompt("Digite um numero"));
+  var resultado = fatorial;
+  for (var contador = fatorial - 1 ; contador > 1; contador--) {
+    resultado *= contador;
+  }
+  document.write(resultado);
+</script>

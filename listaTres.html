@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+  function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
+  }
+
+  function mostra(frase) {
+
+      document.write(frase);
+      pulaLinha();
+  }
+
+  var numero = parseInt(prompt("Digite o valor desejado"));
+  var lista = [];
+  var valor = 1;
+  var contador = 1;
+  while (contador <= numero){
+    if(valor % 2 != 0){
+     lista.push(valor);
+     contador++;
+    }
+    valor++;
+  }
+  mostra(lista);
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+  var numeroAlunos = parseInt(prompt("Digite o numero de alunos"));
+  var notaAlunos = [];
+
+  for(contador = 1;contador <= numeroAlunos; contador++){
+    var nota = parseInt(prompt("Digite a nota do aluno" + contador))
+    notaAlunos.push(nota);
+    mostra("A nota do aluno " + contador + " é " + nota);
+    var max = Math.max.apply(null, notaAlunos);
+    var min = Math.min.apply(null, notaAlunos);
+  }
+  mostra("A maior nota é: " + max);
+  mostra("A menor nota é: " + min);
+
+  </script>
